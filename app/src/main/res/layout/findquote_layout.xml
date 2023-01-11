@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.main.findQuoteFragment">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/findQuotedateFromLabel"
+                android:background="#3E00BCD4"
+                android:hint="date for findQuote"
+                android:text="Date From:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/findQuotedateFromField"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/findQuotedateToLabel"
+                android:background="#3E00BCD4"
+                android:hint="date for findQuote"
+                android:text="Date To:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/findQuotedateToField"
+                android:layout_span="4" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/findQuoteFirstSymbolLabel"
+                android:background="#3E00BCD4"
+                android:hint="date for findQuote"
+                android:text="Symbol:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/findQuoteFirstSymbol"
+                android:layout_span="4" />
+            <Button
+                android:id="@+id/findQuoteOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#06C8E4"
+                android:onClick="findQuoteOK"
+                android:text="findQuote" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/findQuoteSecondSymbolLabel"
+                android:background="#3E00BCD4"
+                android:hint="date for findQuote"
+                android:text="Symbol:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/findQuoteSecondSymbol"
+                android:layout_span="4" />
+            <Button
+                android:id="@+id/findQuoteOKSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="#06C8E4"
+                android:onClick="findQuoteOK"
+                android:text="findQuote" />
+        </TableRow>
+
+        <TableRow>
+
+
+
+
+            <Button
+                android:id="@+id/findQuoteCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:background="#7AEA2F2F"
+                android:onClick="findQuoteCancel"
+                android:text="Cancel" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/findQuoteResultLabel"
+                android:background="#3E00BCD4"
+                android:hint="Result of findQuote"
+                android:text="Result:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findQuoteResult"
+                android:layout_span="4"
+                android:hint="Result of findQuote"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
